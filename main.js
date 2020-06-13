@@ -1,5 +1,4 @@
 const baseURL = "https://quote-garden.herokuapp.com/api/v2/quotes/random";
-
 const searchRandom = document.querySelector("#searchRandom");
 const ausgabe = document.querySelector("#ausgabe");
 
