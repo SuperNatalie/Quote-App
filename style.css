@@ -1,29 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-:root{
-    --bg-color:#1d1d1d;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Sriracha&display=swap');:root{
+    --bg-color:#0C1415;
+    --box-color:#182729;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 body{
    height: 100vh;
    width: 100vw;
    background-color: var(--bg-color);
-   font-family: 'Sriracha', cursive;
+   font-family: 'Raleway', sans-serif;
+    color: white;
+}
+h2{
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 .eingabe-feld{
-    height: 100%;
+    height: 90%;
     width: 100%;
 }
 .box{
     height: 30vw;
     width: 50vw;
-    background-color: red;
+    background-color:var(--box-color);
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+}
+.search-input{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0.5rem;
+}
+.ausgabe-feld{
+    margin-top: 10rem;
+    margin-left: 20rem;
+    margin-right: 1rem;
+}
+#ausgabeAuthor{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: silver;
+}
+sup{
+    color: rgb(255, 187, 0);
+    font-size: 3rem;
+}
+img{
+    float: left;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    max-height: 40vh;
+    max-width: 50vw;
+}
+button{
+    background-color: transparent;
+    color: white;
+    border: silver;
+    margin-left: 1rem;
 }
