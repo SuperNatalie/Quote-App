@@ -1,3 +1,3 @@
-Group Project using JS ans API
+Group Project using JS and API
 
 https://supernatalie.github.io/Quote-App/
