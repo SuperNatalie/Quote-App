@@ -73,6 +73,7 @@ sup{
   text-align: center;
   display: grid;
   margin-right: 2vw;
+  margin-top: 30px;
 }
 #ausgabeAuthor{
   font-size: 0.8rem;
