@@ -16,9 +16,9 @@ searchRandom.addEventListener("click", e => {
         console.log(result.quote.quoteText);
         const quoteText= result.quote.quoteText;
         ausgabeText.innerHTML= `
-        <img src="./img/quote-icon-128.png" class="zitat-oben" alt="zitat"><br>
+        <img src="../img/quote-icon-128.png" class="zitat-oben" alt="zitat"><br>
         <h1>${quoteText}</h1>   
-        <img src="./img/quote-icon-128.png" class="zitat-unten" alt="zitat">`;
+        <img src="../img/quote-icon-128.png" class="zitat-unten" alt="zitat">`;
         ausgabeAuthor.textContent = result.quote.quoteAuthor;
         ausgabePicture.innerHTML = `<img src="https://source.unsplash.com/random?sig=${counter++}" class="zufall-bild" width="300">`;
     });})
