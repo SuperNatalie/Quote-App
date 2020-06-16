@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Sriracha&display=swap');:root{
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Sriracha&display=swap');
+:root{
     --bg-color:#0C1415;
     --box-color:#182729;
     --btn-color:#dcbe14;
@@ -19,10 +20,10 @@ body{
     box-sizing: border-box;
 }
 h2{
-    margin-top: 0.5rem;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    margin-top: 2vh;
 }
 .eingabe-feld{
     height: 90%;
@@ -45,30 +46,45 @@ h2{
     margin-top: 3rem;
     margin-right: 1rem;
 }
-#ausgabeAuthor{
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    color: silver;
-    font-weight: 600;
-}
-#ausgabeText{
-  margin-top: 1rem;
-  font-size: 0.8rem;
-  color: silver;
-  font-weight: 600;
-  text-align: left;
-}
 sup{
     color: rgb(255, 187, 0);
     font-size: 4rem;
 }
+.ausgabe-feld{
+  height: 50vh;
+  width: 70vw;
+  display: grid;
+  grid-template-columns:50% 50%;
+}
 .zufall-bild{
-    float: left;
-    margin-top: 1rem;
-    margin-left: 5rem;
-    margin-right: 1rem;
-    max-height: 60vh;
-    max-width: 20vw;
+  grid-column: 1/2;
+  display: grid;
+  margin: auto;
+  height: 55vh;
+  width: 26vw;
+  object-fit: cover;
+
+}
+#ausgabeText{
+  font-size: 0.8rem;
+  color: silver;
+  font-weight: 600;
+  text-align: center;
+  display: grid;
+  margin-right: 2vw;
+}
+#ausgabeAuthor{
+  font-size: 0.8rem;
+  color: silver;
+  font-weight: 600;
+  display: grid;
+  text-align: center;
+}
+.wrong{
+  font-size: 2rem;
+  color:#dcbe14;
+  text-align: center;
+  margin-top: 2rem;
 }
 button{
     background-color: transparent;
@@ -82,6 +98,10 @@ button{
 button:hover{
   border: #dcbe14 solid 1px; 
   color: rgb(220, 190, 20);
+}
+button:focus{
+  border: #bea61b solid 1px; 
+  color: #bea61b;
 }
 .zitat-oben{
     height: 2rem;
