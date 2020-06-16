@@ -17,8 +17,8 @@ searchRandom.addEventListener("click", e => {
         console.log(result.quote.quoteText);
         const quoteText= result.quote.quoteText;
         ausgabeText.innerHTML= `
-        <img src="https://supernatalie.github.io/Quote-App/img/quote-icon-128.png" class="zitat-oben" alt="zitat"<br>
-        <h1>${quoteText}</h1>   
+        <img src="https://supernatalie.github.io/Quote-App/img/quote-icon-128.png" class="zitat-oben" alt="zitat"<br><br>
+        <h1>${quoteText}</h1><br>   
         <img src="https://supernatalie.github.io/Quote-App/img/quote-icon-128.png" class="zitat-unten" alt="zitat">`;
         ausgabeAuthor.textContent = result.quote.quoteAuthor;
         ausgabePicture.innerHTML = `<img src="https://source.unsplash.com/random?sig=${counter++}" class="zufall-bild" width="300">`;
@@ -42,7 +42,7 @@ searchRandom.addEventListener("click", e => {
             console.log(RandomNum);
             ausgabeText.innerHTML = `
                 <img src="img/quote-icon-128.png" class="zitat-oben" alt="zitat"><br>
-                <h1>${result.quotes[RandomNum].quoteText}</h1> 
+                <h1>${result.quotes[RandomNum].quoteText}</h1><br> 
                 <img src="img/quote-icon-128.png" class="zitat-unten" alt="zitat">`;
                 ausgabeAuthor.innerHTML = result.quotes[RandomNum].quoteAuthor;
                 ausgabePicture.innerHTML = `<img src="https://source.unsplash.com/featured/?${q}?sig=${counter++}" class="zufall-bild" width="300">`;

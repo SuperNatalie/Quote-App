@@ -73,8 +73,8 @@ sup{
   text-align: center;
   display: grid;
   margin-right: 2vw;
-  margin-top: 30px;
 }
+
 #ausgabeAuthor{
   font-size: 0.8rem;
   color: silver;
@@ -107,15 +107,15 @@ button:focus{
   color: #bea61b;
 }
 .zitat-oben{
-    height: 2rem;
-    width: 2rem;
+    height: 1.8rem;
+    width: 1.8rem;
     float:left;
     filter: drop-shadow(22%);
     transform: rotate(180deg)
 }
 .zitat-unten{
-  height: 2rem;
-  width: 2rem;
+  height: 1.8rem;
+  width: 1.8rem;
   position: static;
   justify-self: end;
 
