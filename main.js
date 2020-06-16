@@ -16,9 +16,9 @@ searchRandom.addEventListener("click", e => {
         console.log(result.quote.quoteText);
         const quoteText= result.quote.quoteText;
         ausgabeText.innerHTML= `
-        <img src="https://static.thenounproject.com/png/19278-200.png" class="zitat-oben" alt=" ${quoteText}"><br>
+        <img src="/img/quote-icon-128.png" class="zitat-oben" alt=" ${quoteText}"><br>
         <h1>${quoteText}</h1>   
-        <img src="https://static.thenounproject.com/png/19278-200.png" class="zitat-unten" alt=" ${quoteText}">`;
+        <img src="/img/quote-icon-128.png" class="zitat-unten" alt=" ${quoteText}">`;
         ausgabeAuthor.textContent = result.quote.quoteAuthor;
         ausgabePicture.innerHTML = `<img src="https://source.unsplash.com/random?sig=${counter++}" class="zufall-bild" width="300">`;
     });})
@@ -38,9 +38,9 @@ searchRandom.addEventListener("click", e => {
              const RandomNum = Math.floor(Math.random() * result.quotes.length);
             console.log(RandomNum);
             ausgabeText.innerHTML = `
-                <img src="https://static.thenounproject.com/png/19278-200.png" class="zitat-oben" alt="zitat-oben"><br>
+                <img src="/img/quote-icon-128.png" class="zitat-oben" alt="zitat-oben"><br>
                 <h1>${result.quotes[RandomNum].quoteText}</h1> 
-                <img src="https://static.thenounproject.com/png/19278-200.png" class="zitat-unten" alt="zitat-unten">`;
+                <img src="/img/quote-icon-128.png" class="zitat-unten" alt="zitat-unten">`;
                 ausgabeAuthor.innerHTML = result.quotes[RandomNum].quoteAuthor;
                 ausgabePicture.innerHTML = `<img src="https://source.unsplash.com/featured/?${q}?sig=${counter++}" class="zufall-bild" width="300">`;
             }

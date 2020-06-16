@@ -24,6 +24,7 @@ h2{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     margin-top: 2vh;
+  
 }
 .eingabe-feld{
     height: 90%;
@@ -114,6 +115,9 @@ button:focus{
   height: 2rem;
   width: 2rem;
   position: static;
+  justify-self: end;
+
+  
 }
 .group{ 
     position: fixed; 
